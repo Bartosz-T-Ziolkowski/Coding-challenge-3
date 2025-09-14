@@ -2,7 +2,9 @@
 
 // Code goes here
 
-// Step 2: Create customer records
+// Step 1: Create a New JavaScript File
+
+// Step 2: Create customer record
 
 let customers = [
     {
@@ -32,13 +34,13 @@ customers.push(newObject);
 customers.shift();
 console.log(customers);
 
-// Update customer info
+// Step 4: Update customer info
 
 customers[1]["email"] = "Sueanne@example.com";
 console.log(customers);
-customers[1].purchases.push("forks");
-console.log("Mary's purchases: " + customers[1].purchases);
+customers[0].purchases.push("forks");
+console.log("Mary's updated purchases: " + customers[0].purchases);
 
-//
+// Step 5: Display Customer Information
 
 customers.forEach(obj =>console.log(`name: ${obj.name} | email: ${obj.email} | purchases: ${obj.purchases.length}`));
